@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player-SAIDの小站</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('wallpaper.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* 背景图片固定 */
+            color: white;
+        }
+
+        /* 标题样式 */
+        .title {
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加文字阴影 */
+            margin-top: 20px;
+        }
+
+        /* 主要内容区域 */
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        /* 卡片样式 */
+        .section {
+            flex: 1 1 300px;
+            margin: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1); /* 半透明背景 */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px); /* 毛玻璃效果 */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-10px); /* 悬停时上移 */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* 文字样式 */
+        .块内文字 {
+            font-size: 18px;
+            line-height: 1.6;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* 标题样式 */
+        .h2 {
+            color: white;
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        /* 链接样式 */
+        .链接样式 {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: color 0.3s ease;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .链接样式:hover {
+            color: #00ccff; /* 悬停时变色 */
+            text-decoration: underline;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .section {
+                flex: 1 1 100%;
+                margin: 10px 0;
+            }
+
+            .title {
+                font-size: 28px;
+            }
+
+            .h2 {
+                font-size: 24px;
+            }
+
+            .块内文字 {
+                font-size: 16px;
+            }
+
+            .链接样式 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">Player-SAIDの个人小站</h1>
+    </div>
+    <div class="main-content">
+        <!-- 小站介绍 -->
+        <div class="section">
+            <h2 class="h2">小站介绍</h2>
+            <p class="块内文字">嗨~欢迎光临Player-SAIDの小站，</p>
+            <p class="块内文字">本站固定更新：启科杀毒软件，新的项目，CFTQ Cloud网页更新</p>
+            <p class="块内文字">不固定更新：暂时还没有诶</p>
+        </div>
+
+        <!-- 启科杀毒软件 -->
+        <div class="section">
+            <h2 class="h2">启科杀毒软件</h2>
+            <p class="块内文字">什么？你问这个呀！启科杀毒软件这个项目已经被我用C4炸弹kill了，更新随缘咯。</p>
+            <a href="./QiKe Security Software.html" class="链接样式">→了解QiKe Security Software←</a>
+        </div>
+
+        <!-- CFTQ Cloud -->
+        <div class="section">
+            <h2 class="h2">CFTQ Cloud</h2>
+            <p class="块内文字">CFTQ Cloud具有快速，稳定，安全的特点，是民间云安全解决方案，云端库收录了大量病毒特征，能够有效检出恶意文件，电脑木马，与猎剑文件鉴定云合作，共享数据</p>
+            <a href="http://cftqcloud.czkyun.pw" class="链接样式">→查看CFTQ Cloud←</a>
+            <br>
+            <a href="https://c.hezhongkj.top/" class="链接样式">→查看猎剑文件鉴定云←</a>
+        </div>
+
+        <!-- 哔哩哔哩 -->
+        <div class="section">
+            <h2 class="h2">哔哩哔哩</h2>
+            <a href="https://space.bilibili.com/3493089257720124?spm_id_from=333.1007.0.0" class="链接样式">→跳转到我的B站空间←</a>
+        </div>
+    </div>
+</body>
+</html>
